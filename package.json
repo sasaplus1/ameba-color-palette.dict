@@ -3,5 +3,8 @@
     "ameba-color-palette.css": "^4.4.1",
     "css-tree": "^1.1.3"
   },
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "node ./npm_scripts/extract.js > ./ameba-color-palette.dict"
+  }
 }
