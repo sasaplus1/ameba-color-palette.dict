@@ -5,6 +5,6 @@
   },
   "private": true,
   "scripts": {
-    "build": "node ./npm_scripts/extract.js > ./ameba-color-palette.dict"
+    "build": "node ./npm_scripts/extract.js > ./dict/ameba-color-palette.dict"
   }
 }
