@@ -5,6 +5,9 @@
   },
   "private": true,
   "scripts": {
-    "build": "node ./npm_scripts/extract.js > ./ameba-color-palette.dict"
+    "attach": "git worktree add ./dist master",
+    "build": "node ./npm_scripts/extract.js > ./dict/ameba-color-palette.dict",
+    "detach": "git worktree remove ./dist",
+    "release": "cp -rf ./dict ./ftplugin ./dist"
   }
 }
