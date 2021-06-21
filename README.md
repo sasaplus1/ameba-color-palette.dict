@@ -1,5 +1,7 @@
 # ameba-color-palette.dict
 
+[![Actions Status: test](https://github.com/sasaplus1/ameba-color-palette.dict/workflows/test/badge.svg)](https://github.com/sasaplus1/ameba-color-palette.dict/actions?query=workflow%3A"test")
+
 dictionary of [ameba-color-palette.css](https://github.com/openameba/ameba-color-palette.css) for Vim
 
 ## Setup
