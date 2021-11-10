@@ -125,6 +125,7 @@
 --color-object-expressive-pink
 --color-focus-clarity
 --color-focus-ambiguous
+--color-border-strong-emphasis
 --color-border-high-emphasis
 --color-border-medium-emphasis
 --color-border-low-emphasis
