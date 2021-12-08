@@ -6,5 +6,8 @@
     ":preserveSemverRanges",
     ":assignee(sasaplus1)",
     ":timezone(Asia/Tokyo)"
+  ],
+  "baseBranches": [
+    "develop"
   ]
 }
