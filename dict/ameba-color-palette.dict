@@ -123,6 +123,9 @@
 --color-object-caution
 --color-object-high-emphasis-inverse
 --color-object-expressive-pink
+--color-overlay-dark
+--color-overlay-light
+--color-overlay-medium
 --color-focus-clarity
 --color-focus-ambiguous
 --color-border-strong-emphasis
