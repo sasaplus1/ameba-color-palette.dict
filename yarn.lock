@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-ameba-color-palette.css@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/ameba-color-palette.css/-/ameba-color-palette.css-4.5.0.tgz#def1083966f1bf07dbfae57667ec1d51fa07b7ce"
-  integrity sha512-oMROw1CkqJKgHOTricRWN0YEvgGSvkcW4J4bOQ11BMElh521pj2r1XK64eNo2AuKZaUGnKOrlA7KIQGnuKHsHQ==
+ameba-color-palette.css@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/ameba-color-palette.css/-/ameba-color-palette.css-4.6.0.tgz#c3251bce81b47c806536b7b0edecfdb9da20cd8f"
+  integrity sha512-7eWNj5JEU4nGLWyolxVZCAvJZRsYa+zZg4vmx/q0Ef4eMwc6aEHQ0xus/M6DjziDa/oJ0IKfvLGBnS6vKkv+7g==
 
 css-tree@^1.1.3:
   version "1.1.3"
