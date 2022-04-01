@@ -41,6 +41,12 @@ call dein#add('sasaplus1/ameba-color-palette.dict', {
       \ })
 ```
 
+## How to release
+
+```console
+$ yarn run release
+```
+
 ## License
 
 The MIT license.
