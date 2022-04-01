@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "ameba-color-palette.css": "^4.6.0",
+    "ameba-color-palette.css": "^4.8.0",
     "css-tree": "^1.1.3"
   },
   "private": true,
