@@ -123,7 +123,7 @@
 --color-surface-caution
 --color-surface-caution-light
 --color-text-high-emphasis
---color-text-mid-emphasis
+--color-text-medium-emphasis
 --color-text-low-emphasis
 --color-text-disabled
 --color-text-high-emphasis-inverse
@@ -134,7 +134,7 @@
 --color-highlight-hover
 --color-highlight-error
 --color-object-high-emphasis
---color-object-mid-emphasis
+--color-object-medium-emphasis
 --color-object-low-emphasis
 --color-object-disable
 --color-object-accent-primary
@@ -144,7 +144,7 @@
 --color-focus-clarity
 --color-focus-ambiguous
 --color-border-high-emphasis
---color-border-mid-emphasis
+--color-border-medium-emphasis
 --color-border-low-emphasis
 --color-border-accent-primary
 --color-border-high-emphasis-inverse
