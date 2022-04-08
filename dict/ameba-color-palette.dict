@@ -87,6 +87,8 @@
 --instagram-pink
 --focus-blue-100
 --focus-blue-30-alpha
+--highlight-yellow-100
+--highlight-yellow-30-alpha
 --color-background
 --color-surface-primary
 --color-surface-secondary
@@ -108,6 +110,7 @@
 --color-text-caution
 --color-highlight-error
 --color-highlight-hover
+--color-highlight-yellow
 --color-object-high-emphasis
 --color-object-medium-emphasis
 --color-object-low-emphasis
