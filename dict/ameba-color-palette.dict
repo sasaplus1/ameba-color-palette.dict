@@ -91,6 +91,7 @@
 --color-surface-primary
 --color-surface-secondary
 --color-surface-tertiary
+--color-surface-quaternary
 --color-surface-accent-primary
 --color-surface-accent-primary-light
 --color-surface-accent-secondary
@@ -107,7 +108,6 @@
 --color-text-caution
 --color-highlight-error
 --color-highlight-hover
---color-highlight-error
 --color-object-high-emphasis
 --color-object-medium-emphasis
 --color-object-low-emphasis
