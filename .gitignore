@@ -133,8 +133,5 @@ dist
 
 ### ameba-color-palette.dict
 
-# ameba-color-palette.css versions text
-/versions.txt
-
 # release branch worktree
 /release

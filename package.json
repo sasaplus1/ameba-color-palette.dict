@@ -2,12 +2,5 @@
   "devDependencies": {
     "css-tree": "^2.1.0"
   },
-  "private": true,
-  "scripts": {
-    "attach": "git worktree add ./release release",
-    "detach": "git worktree remove ./release",
-    "prerelease": "yarn --silent info ameba-color-palette.css versions | tr \"'\" '\"' | jq -r .[] > ./versions.txt",
-    "postrelease": "yarn remove ameba-color-palette.css || true",
-    "release": "cat ./versions.txt | xargs -n 1 ./index.sh"
-  }
+  "private": true
 }
