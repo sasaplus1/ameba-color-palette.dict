@@ -5,6 +5,7 @@
     ":label(renovate)",
     ":preserveSemverRanges",
     ":assignee(sasaplus1)",
-    ":timezone(Asia/Tokyo)"
+    ":timezone(Asia/Tokyo)",
+    ":disableDependencyDashboard"
   ]
 }
