@@ -1,5 +1,6 @@
 --clr-black-a80
 --clr-black-a50
+--clr-black-a10
 --clr-black-a5
 --clr-darkgray
 --clr-dimgray
@@ -17,6 +18,7 @@
 --clr-red
 --clr-orange
 --clr-yellow
+--clr-lightyellow
 --clr-gold
 --clr-bronze
 --clr-twitter
