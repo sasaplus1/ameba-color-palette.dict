@@ -85,6 +85,9 @@
 --facebook-blue
 --twitter-blue
 --instagram-pink
+--apple-black
+--apple-white
+--youtube-red
 --focus-blue-100
 --focus-blue-30-alpha
 --highlight-yellow-100
@@ -119,6 +122,7 @@
 --color-object-accent-secondary
 --color-object-caution
 --color-object-high-emphasis-inverse
+--color-object-expressive-pink
 --color-focus-clarity
 --color-focus-ambiguous
 --color-border-high-emphasis
