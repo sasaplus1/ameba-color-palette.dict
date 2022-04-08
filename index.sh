@@ -16,6 +16,7 @@ __main() {
     return 0
   fi
 
+  local -r repo=./release
   local -r dist=./release/dict
 
   mkdir -p "$dist"
@@ -24,10 +25,8 @@ __main() {
 
   node index.js > "$dist/ameba-color-palette.dict"
 
-  cd ./release
-  git add .
-  git commit -m "release"
-  git tag "$version"
-  cd -
+  git --git-dir="$repo/.git" --work-tree="$repo" add .
+  git --git-dir="$repo/.git" --work-tree="$repo" commit -m release --allow-empty
+  git --git-dir="$repo/.git" --work-tree="$repo" tag "$version"
 }
 __main "$@"
