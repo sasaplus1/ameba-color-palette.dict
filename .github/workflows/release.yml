@@ -21,10 +21,10 @@ jobs:
       - run: git config --global user.name 'GitHub Actions'
       - run: git config --global user.email '<>'
       - run: yarn install --frozen-lockfile
-      - run: yarn run attach
-      - run: yarn run release
+      - run: make attach
+      - run: make release
       - run: git push origin release
         working-directory: release
       - run: git push origin --tags
         working-directory: release
-      - run: yarn run detach
+      - run: make detach
