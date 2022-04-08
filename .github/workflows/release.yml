@@ -1,0 +1,30 @@
+name: release
+
+on:
+  schedule:
+    # NOTE: at 8:05 am everyday by JST
+    - cron: '5 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: 'yarn'
+      - run: git config --global user.name 'GitHub Actions'
+      - run: git config --global user.email '<>'
+      - run: yarn install --frozen-lockfile
+      - run: yarn run attach
+      - run: yarn run release
+      - run: git push origin release
+        working-directory: release
+      - run: git push origin --tags
+        working-directory: release
+      - run: yarn run detach
