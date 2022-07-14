@@ -18,8 +18,8 @@ jobs:
         with:
           node-version: 16
           cache: 'yarn'
-      - run: git config --global user.name 'GitHub Actions'
-      - run: git config --global user.email '<>'
+      - run: git config --global user.name 'github-actions[bot]'
+      - run: git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - run: yarn install --frozen-lockfile
       - run: make attach
       - run: make release
