@@ -18,4 +18,4 @@ detach: ## remove release worktree
 
 .PHONY: release
 release: ## release process
-	yarn --silent info ameba-color-palette.css versions | tr "'" '"' | jq -r .[] | xargs -n 1 ./index.sh
+	yarn --json --silent info ameba-color-palette.css versions | jq -r .data[] | xargs -n 1 ./index.sh
