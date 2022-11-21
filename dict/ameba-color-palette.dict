@@ -101,6 +101,8 @@
 --color-surface-accent-primary-light
 --color-surface-accent-secondary
 --color-surface-accent-secondary-light
+--color-surface-accent-neutral-high-emphasis
+--color-surface-accent-neutral-medium-emphasis
 --color-surface-caution
 --color-surface-caution-light
 --color-text-high-emphasis
@@ -134,6 +136,7 @@
 --color-border-low-emphasis
 --color-border-accent-primary
 --color-border-high-emphasis-inverse
+--color-border-low-emphasis-inverse
 --color-border-caution
 --color-third-party-facebook-blue
 --color-third-party-twitter-blue
