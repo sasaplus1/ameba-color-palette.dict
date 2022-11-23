@@ -40,6 +40,7 @@ jobs:
             git push origin release
           fi
         working-directory: release
+        name: push release branch
       - run: |
           set -x
           if [[ "$GITHUB_EVENT_NAME" =~ ^(push|pull_request)$ ]]
@@ -49,4 +50,5 @@ jobs:
             git push --tags origin
           fi
         working-directory: release
+        name: push tags
       - run: git worktree remove ./release
