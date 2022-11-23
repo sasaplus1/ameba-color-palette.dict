@@ -1,0 +1,30 @@
+name: release
+
+on:
+  schedule:
+    # NOTE: at 7:05 am everyday by JST
+    - cron: '5 22 * * *'
+  workflow_dispatch:
+
+jobs:
+  release:
+    name: release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 16
+          cache: npm
+      - run: git config --global user.name 'github-actions[bot]'
+      - run: git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - run: npm ci
+      - run: git worktree add ./release release
+      - run: npm start
+      - run: git push origin release
+        working-directory: release
+      - run: git push origin --tags
+        working-directory: release
+      - run: git worktree remove ./release
