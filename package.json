@@ -2,8 +2,5 @@
   "devDependencies": {
     "css-tree": "^2.2.1"
   },
-  "private": true,
-  "scripts": {
-    "start": "npm --json --silent info ameba-color-palette.css versions | jq -r '.[]' | xargs -n 1 ./index.sh"
-  }
+  "private": true
 }
