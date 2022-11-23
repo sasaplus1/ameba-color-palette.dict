@@ -1,6 +1,8 @@
 name: release
 
 on:
+  push:
+  pull_request:
   schedule:
     # NOTE: at 7:05 am everyday by JST
     - cron: '5 22 * * *'
@@ -9,6 +11,7 @@ on:
 jobs:
   release:
     name: release
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -22,9 +25,26 @@ jobs:
       - run: git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - run: npm ci
       - run: git worktree add ./release release
-      - run: npm start
-      - run: git push origin release
+      - run: >
+          npm --json --silent info ameba-color-palette.css versions |
+          jq -r '.[]' |
+          xargs -n 1 ./index.sh
+      - run: git show --format=fuller
         working-directory: release
-      - run: git push origin --tags
+      - run: |
+          if [[ "$GITHUB_EVENT_NAME" =~ ^(push|pull_request)$ ]]
+          then
+            git push --dry-run origin release
+          else
+            git push origin release
+          fi
+        working-directory: release
+      - run: |
+          if [[ "$GITHUB_EVENT_NAME" =~ ^(push|pull_request)$ ]]
+          then
+            git push --dry-run --tags origin
+          else
+            git push --tags origin
+          fi
         working-directory: release
       - run: git worktree remove ./release
