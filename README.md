@@ -41,6 +41,13 @@ call dein#add('sasaplus1/ameba-color-palette.dict', {
       \ })
 ```
 
+add some options to `dein#add` if you want to lazy loading:
+
+```diff
++      \ 'lazy' : v:true,
++      \ 'on_ft' : ['css'],
+```
+
 ## License
 
 The MIT license.
