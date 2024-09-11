@@ -1,6 +1,6 @@
 {
   "devDependencies": {
-    "css-tree": "^2.2.1"
+    "css-tree": "^3.0.0"
   },
   "private": true
 }
