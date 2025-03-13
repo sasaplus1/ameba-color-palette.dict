@@ -130,6 +130,11 @@
 --color-highlight-error
 --color-highlight-hover
 --color-highlight-yellow
+--color-hover-contained-button
+--color-hover-outlined-button
+--color-hover-neutral-button
+--color-hover-lighted-button
+--color-hover-danger-button
 --color-object-high-emphasis
 --color-object-medium-emphasis
 --color-object-low-emphasis
