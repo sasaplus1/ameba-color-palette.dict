@@ -1,8 +1,10 @@
 name: release
 
+# TODO: trigger this workflow when renovate merged a ameba-color-palette.css PR
 on:
   push:
-  pull_request:
+    branch:
+      - main
   schedule:
     # NOTE: at 7:05 am every day, JST
     - cron: '5 22 * * *'
@@ -11,7 +13,6 @@ on:
 jobs:
   release:
     name: release
-    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name != github.repository
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
