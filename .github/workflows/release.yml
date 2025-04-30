@@ -19,19 +19,20 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
-          cache: npm
+          node-version-file: package.json
+      - run: npm install -g npm@"$(jq -r .engines.npm package.json)"
       - run: git config --global user.name 'github-actions[bot]'
       - run: git config --global user.email '41898282+github-actions[bot]@users.noreply.github.com'
       - run: npm ci
       - run: git worktree add ./release release
       - run: >
-          npm --json --silent info ameba-color-palette.css versions |
-          jq -r '.[]' |
-          xargs -n 1 ./index.sh
+          npm --json --silent info ameba-color-palette.css versions
+          | jq -r '.[]'
+          | xargs -n 1 ./index.sh
       - run: git show --format=fuller
         working-directory: release
-      - run: |
+      - name: push release branch
+        run: |
           set -x
           if [[ "$GITHUB_EVENT_NAME" =~ ^(push|pull_request)$ ]]
           then
@@ -40,8 +41,8 @@ jobs:
             git push origin release
           fi
         working-directory: release
-        name: push release branch
-      - run: |
+      - name: push tags
+        run: |
           set -x
           if [[ "$GITHUB_EVENT_NAME" =~ ^(push|pull_request)$ ]]
           then
@@ -50,5 +51,4 @@ jobs:
             git push --tags origin
           fi
         working-directory: release
-        name: push tags
       - run: git worktree remove ./release
