@@ -16,5 +16,4 @@ jobs:
           node-version: 20
           cache: npm
       - run: npm ci
-      - run: npm install -D ameba-color-palette.css
       - run: node index.js
