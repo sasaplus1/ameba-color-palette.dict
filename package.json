@@ -2,5 +2,9 @@
   "devDependencies": {
     "css-tree": "^3.0.0"
   },
+  "engiens": {
+    "node": "22",
+    "npm": "11"
+  },
   "private": true
 }
