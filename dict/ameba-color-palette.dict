@@ -75,6 +75,7 @@
 --caution-red-vivid-100
 --caution-red-vivid-20-alpha
 --caution-red-vivid-5-alpha
+--rating-orange-100
 --expressive-blue
 --expressive-green
 --expressive-purple
@@ -145,6 +146,7 @@
 --color-object-positive
 --color-object-high-emphasis-inverse
 --color-object-expressive-pink
+--color-object-rating
 --color-overlay-dark
 --color-overlay-light
 --color-overlay-medium
