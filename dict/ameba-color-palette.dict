@@ -90,6 +90,7 @@
 --x-black
 --x-white
 --instagram-pink
+--instagram-white
 --apple-black
 --apple-white
 --youtube-red
@@ -136,6 +137,11 @@
 --color-hover-neutral-button
 --color-hover-lighted-button
 --color-hover-danger-button
+--color-active-contained-button
+--color-active-outlined-button
+--color-active-neutral-button
+--color-active-lighted-button
+--color-active-danger-button
 --color-object-high-emphasis
 --color-object-medium-emphasis
 --color-object-low-emphasis
@@ -168,6 +174,7 @@
 --color-third-party-x-black
 --color-third-party-x-white
 --color-third-party-instagram-pink
+--color-third-party-instagram-white
 --color-third-party-apple-black
 --color-third-party-apple-white
 --color-third-party-youtube-red
